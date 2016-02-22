@@ -201,8 +201,10 @@ function preparePlaceholder() {
   if (!document.getElementById("imagegallery")) return false;
   var placeholder = document.createElement("img");
   placeholder.setAttribute("id","placeholder");
-  placeholder.setAttribute("src","images/placeholder.gif");
-  placeholder.setAttribute("alt","my image gallery");
+  placeholder.setAttribute("src","images/placeholder.jpg");
+  placeholder.setAttribute("alt", "my image gallery");
+  placeholder.setAttribute("height", "300px");
+  placeholder.setAttribute("width", "400px");
   var description = document.createElement("p");
   description.setAttribute("id","description");
   var desctext = document.createTextNode("Choose an image");
